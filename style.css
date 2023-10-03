@@ -35,9 +35,9 @@ body {
   .card:hover .save button {
     visibility: visible;
     background-color: rgba(105, 5, 5, 0.911);
-    transition: 4s;
+    transition: 1s;
     animation-name: button-animation;
-    animation-duration: 6s;
+    animation-duration: 1.5s;
   }
   .save button {
     width: 25%;
@@ -58,11 +58,7 @@ body {
     left: 3%;
     bottom: 3%;
   }
-   a::before {
-    content: "⇉"
-  }
   @keyframes button-animation {
     0% {top:-5%;}
     100% {top:3%;}
   }
-
