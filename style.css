@@ -36,6 +36,8 @@ body {
     visibility: visible;
     background-color: rgba(105, 5, 5, 0.911);
     transition: 4s;
+    animation-name: button-animation;
+    animation-duration: 6s;
   }
   .save button {
     width: 25%;
@@ -46,8 +48,6 @@ body {
     position: absolute;
     right: 3%;
     top: 3%;
-    animation-name: button-animation;
-    animation-duration: 6s;
     visibility: hidden;
   }
   @keyframes button-animation {
