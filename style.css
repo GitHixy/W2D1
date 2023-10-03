@@ -1,64 +1,140 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: black;
+  background-color: black;
+}
+.card {
+  margin-top: 10%;
+  margin-inline: 40%;
+  width: 20%;
+  aspect-ratio: 1/1.5;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sfumatura {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(24, 6, 36, 0.2049194677871149) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.card:hover .sfumatura {
+  visibility: visible;
+}
+.card:hover .save button {
+  visibility: visible;
+  background-color: rgba(105, 5, 5, 0.911);
+  transition: 1s;
+  animation-name: button-animation;
+  animation-duration: 1.5s;
+}
+.card:hover .go-to button {
+  visibility: visible;
+  animation-name: go-to-animation;
+  animation-duration: 1.5s;
+}
+.card:hover .download button {
+  visibility: visible;
+  animation-name: download-animation;
+  animation-duration: 1.5s;
+}
+.card:hover .dots button {
+  visibility: visible;
+  animation-name: dots-animation;
+  animation-duration: 1.5s;
+}
+.save button {
+  width: 25%;
+  height: 7%;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  visibility: hidden;
+}
+.go-to button {
+  width: 15%;
+  height: 8%;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+  border: none;
+  visibility: hidden;
+}
+.download button {
+  width: 15%;
+  height: 8%;
+  background-color: black;
+  border-radius: 10px;
+  right: 21%;
+  bottom: 3%;
+  border: none;
+  position: absolute;
+  visibility: hidden;
+}
+.dots button {
+  position: absolute;
+  width: 15%;
+  height: 8%;
+  background-color: black;
+  border-radius: 10px;
+  bottom: 3%;
+  right: 3%;
+  border: none;
+  visibility: hidden;
+}
+#icon,
+#icon2,
+#icon3 {
+  color: white;
+  font-size: 30px;
+}
+@keyframes button-animation {
+  0% {
+    top: -5%;
   }
-  .card {
-    width: 40%;
-    aspect-ratio: 1/1.5;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-  }
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .sfumatura {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      visibility: hidden;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      0deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(24, 6, 36, 0.2049194677871149) 100%,
-      rgba(0, 212, 255, 1) 100%
-    );
-  }
-  .card:hover .sfumatura {
-    visibility: visible;
-  }
-  .card:hover .save button {
-    visibility: visible;
-    background-color: rgba(105, 5, 5, 0.911);
-    transition: 1s;
-    animation-name: button-animation;
-    animation-duration: 1.5s;
-  }
-  .save button {
-    width: 25%;
-    height: 7%;
-    border-radius: 50%;
-    color: white;
-    background-color: black;
-    position: absolute;
-    right: 3%;
+  100% {
     top: 3%;
-    visibility: hidden;
   }
-  .go-to button {
-    width: 45%;
-    height: 5%;
-    border-radius: 10px;
-    position: absolute;
-    left: 3%;
+}
+@keyframes go-to-animation {
+  0% {
+    bottom: -5%;
+  }
+  100% {
     bottom: 3%;
   }
-  @keyframes button-animation {
-    0% {top:-5%;}
-    100% {top:3%;}
+}
+@keyframes download-animation {
+  0% {
+    bottom: -5%;
   }
+  100% {
+    bottom: 3%;
+  }
+}
+@keyframes dots-animation {
+  0% {
+    bottom: -5%;
+  }
+  100% {
+    bottom: 3%;
+  }
+}
