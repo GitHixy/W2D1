@@ -50,10 +50,6 @@ body {
     top: 3%;
     visibility: hidden;
   }
-  @keyframes button-animation {
-    0% {top:-5%;}
-    100% {top:3%;}
-  }
   .go-to button {
     width: 45%;
     height: 5%;
@@ -64,5 +60,9 @@ body {
   }
    a::before {
     content: "⇉"
+  }
+  @keyframes button-animation {
+    0% {top:-5%;}
+    100% {top:3%;}
   }
 
