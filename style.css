@@ -34,7 +34,7 @@ body {
 .card:hover .sfumatura {
   visibility: visible;
   animation-name: sfumatura-animation;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   
 }
 .card:hover .save button {
@@ -42,22 +42,22 @@ body {
   background-color: rgba(105, 5, 5, 0.911);
   transition: 1s;
   animation-name: button-animation;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 .card:hover .go-to button {
   visibility: visible;
   animation-name: go-to-animation;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 .card:hover .download button {
   visibility: visible;
   animation-name: download-animation;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 .card:hover .dots button {
   visibility: visible;
   animation-name: dots-animation;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 .save button {
   width: 25%;
